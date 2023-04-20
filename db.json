@@ -1,0 +1,62 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "A novel about racism and injustice in the American South.",
+        "coverImageUrl": "https://www.gannett-cdn.com/-mm-/cd5da598fdab91842161bac93114e3a61e8f5a73/c=0-51-1653-2256/local/-/media/2018/06/19/USATODAY/USATODAY/636650232851891468-Mockingbird-Cover.jpg"
+      },
+      {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "description": "A dystopian novel about a totalitarian society.",
+        "coverImageUrl": "https://images1.the-dots.com/3491566/1984-front-01.png?p=projectImageFullJpg"
+      },
+      {
+        "id": 3,
+        "title": "Ikki Eshik Orasi",
+        "author": "O'tkir Hoshimov",
+        "description": "This book tells about second world war lifen in small village",
+        "coverImageUrl": "https://kitobxon.com/img_knigi/5511.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Elon Musk",
+        "author": "Ashlee Vance",
+        "description": "Tesla, SpaceX, and the Quest for a Fantastic Future is Ashlee Vance's biography of Elon Musk",
+        "coverImageUrl": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91jwRwzDM0L._AC_UF1000,1000_QL80_.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Sariq Devni Minib",
+        "author": "Xudoyberdi To'xtaboyev",
+        "description": "Bu asarda orzu-havasga eltadigan chinakam yo'l ha loimehnat, yaxshi xulq odob va qunt bilan o'qlshda ckanligi ta'kidlanadi. ",
+        "coverImageUrl": "https://assets.asaxiy.uz/product/items/desktop/b96b6ef511a43a1c18545b2c0c305c1f20210417160539151267InK7Oi5Y1.jpg.webp"
+      },
+      {
+        "id": 6,
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "description": "No matter your goals, Atomic Habits offers a proven framework for improving--every day",
+        "coverImageUrl": "https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UF894,1000_QL80_.jpg"
+      },
+      {
+        "id": 7,
+        "title": "The Facebook Affect",
+        "author": "David Kirkpatric",
+        "description": "It describes the history of Facebook and its social implications ",
+        "coverImageUrl": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91OE0W6R2HL.jpg"
+      },
+      {
+        "id": 8,
+        "title": "How to talk to anyone",
+        "author": "Leil Lowndes",
+        "description": "92 Little Tricks for Big Success in Relationship by Leil Lowndes ",
+        "coverImageUrl": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/614TtAlbSHL.jpg"
+      }
+
+    ]
+  }
+  
