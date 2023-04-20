@@ -1,0 +1,62 @@
+.navbar-brand{
+  padding-top:0;
+}
+
+.library-container {
+  align-items: center;
+  margin-top: 1.5rem !important;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  }
+
+  .books-container {
+    justify-self: center;
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10rem, 1fr));
+    gap: 20px 10px;
+  }
+  
+  .mb-3{
+   display: flex;
+   margin-left:1rem;
+   flex-direction: column;
+  }
+
+  input.form-control{
+    width: 30rem;
+  }
+  input.form-control:focus{
+    box-shadow:none;
+    border-color: blueviolet;
+  }
+  .search-input {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgb(160, 135, 135);
+  }
+  
+  .card-img-top {
+    max-width: 239px;
+    max-height: 318px;
+    object-fit: cover;
+  }
+  .card{
+    max-width: 241px;
+    max-height: 438px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  div.card-title.h5{
+    font-size: 18px;
+  }
+  p.card-text{
+    font-size: 14px;
+  }
+  button.btn.btn-primary{
+    color:rgba(0, 0, 0, 0.357);
+    font-size: 14px;
+    background-color: #F8F9FA;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.13) 0px 2px 3px;
+  }
