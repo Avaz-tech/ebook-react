@@ -1,0 +1,52 @@
+.intro-container {
+    margin-top: 5rem;
+    justify-self: center;
+    position: relative;
+    width: 90vw; /* set container width relative to viewport width */
+    max-width: 1200px; /* set maximum container width */
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr)); /* use fr unit to set column size */
+    grid-template-rows: repeat(8, minmax(50px, 1fr)); /* use fr unit to set row size */
+    gap: 10px;
+    grid-template-areas:
+      "a b b b b"
+      "a b b b b"
+      "a b b b b"
+      "a c c d d"
+      "e e e e e"
+      "e e e e e"
+      "e e e e e"
+      "e e e e e";
+  }
+  
+  .intro-container > div {
+    background-color: rgba(128, 128, 128, 0.237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  
+.a,
+.b,
+.c,
+.d,
+.e{
+    background-color: white
+}
+.a{
+   
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}

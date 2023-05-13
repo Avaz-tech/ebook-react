@@ -1,3 +1,12 @@
+body{
+  background-image: url('./../images/Library-img.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+#root{
+  display: grid;
+}
+
 .navbar-brand{
   padding-top:0;
 }
@@ -30,11 +39,13 @@
   input.form-control:focus{
     box-shadow:none;
     border-color: blueviolet;
+    background-color: transparent;
   }
   .search-input {
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgb(160, 135, 135);
+    background-color: transparent;
   }
   
   .card-img-top {
@@ -56,7 +67,32 @@
   button.btn.btn-primary{
     color:rgba(0, 0, 0, 0.357);
     font-size: 14px;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa2c;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.13) 0px 2px 3px;
   }
+
+ 
+  .hidden-text {
+    height: 20rem;
+    position: absolute;
+    top: 0;
+   
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.446);
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+  }
+  
+ .hidden-text:hover {
+    opacity: 1;
+  }
+  

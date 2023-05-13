@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './NavigationBar';
 import './../styles/Home.css';
 
 const Home = () => {
+  const navigate = useNavigate();
   const [books, setBooks] = useState([]);
   const [filteredBooks, setFilteredBooks] = useState([]);
   const [query, setQuery] = useState('');
 
   useEffect(() => {
     // Fetch books from server
-    fetch('http://localhost:3000/books')
+    fetch('http://localhost:3001/books')
       .then(response => response.json())
       .then(data => {
         setBooks(data);
@@ -33,7 +35,10 @@ const Home = () => {
     );
     setFilteredBooks(filtered);
   };
-
+ 
+  function handleMoreClick() {
+    navigate('/book-info');
+  }
   return (
     <>
       <NavigationBar />
@@ -65,6 +70,7 @@ const Home = () => {
                   {book.author}
                 </Card.Subtitle>
                 <Button variant="primary">Download</Button>
+                <button onClick={handleMoreClick} className="hidden-text">More</button>
               </Card.Body>
             </Card>
           ))}
