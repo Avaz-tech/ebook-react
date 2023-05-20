@@ -1,45 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
 .intro-container {
-    margin-top: 5rem;
+    margin-top: 7rem;
     justify-self: center;
-    position: relative;
     width: 90vw; /* set container width relative to viewport width */
     max-width: 1200px; /* set maximum container width */
     display: grid;
-    grid-template-columns: repeat(5, minmax(100px, 1fr)); /* use fr unit to set column size */
-    grid-template-rows: repeat(8, minmax(50px, 1fr)); /* use fr unit to set row size */
     gap: 10px;
     grid-template-areas:
-      "a b b b b"
-      "a b b b b"
-      "a b b b b"
-      "a c c d d"
-      "e e e e e"
-      "e e e e e"
-      "e e e e e"
-      "e e e e e";
+      "a a b b b b"
+      "a a b b b b"
+      "a a c c d d"
+      "e e e e e e"
+      "e e e e e e"
+      "e e e e e e"
+      "e e e e e e";
   }
   
   .intro-container > div {
-    background-color: rgba(128, 128, 128, 0.237);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 22px;
+    color: rgb(6, 11, 7);
+    background-color: rgba(240, 248, 255, 0.821);
   }
   
-.a,
-.b,
-.c,
-.d,
-.e{
-    background-color: white
-}
-.a{
-   
+.a{ 
     grid-area: a;
+    height: 400px;
+    background-image: url('./../images/atomic-habits.webp');
+   object-fit: cover;
+   
 }
+
+.img-container div{
+    object-fit: cover;
+}
+
 .b{
+    height: 320px;
     grid-area: b;
+    padding: 1.5rem;
+    margin-bottom: unset;
+    background-color: rgba(240, 248, 255, 0.821);
+}
+.b li{
+    list-style: none;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 3px;
+    
+}
+
+.b li.book-title{
+    font-size: 26px;
+    font-weight: bold;
+}
+.b li span{
+  
+    font-weight: 300;
 }
 .c{
     grid-area: c;
@@ -47,6 +68,48 @@
 .d{
     grid-area: d;
 }
+.a,
+.b,
+.c,
+.d,
+.e{
+  border: none;
+  border-radius: 4px;
+}
+
+.read,
+.download{
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(70, 46, 226) ;
+    box-shadow: rgba(126, 126, 221, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: rgba(240, 248, 255, 0.774);
+    height: 7vh;
+}
+
+.read:hover,
+.download:hover{
+    font-weight: 700;
+    box-shadow: rgb(70, 46, 226)  0px 1px 4px, rgba(101, 93, 106, 0.243) 0px 0px 0px 3px;
+    
+}
+
 .e{
     grid-area: e;
+    display: flex;
+    flex-direction: column;
+    padding:20px 30px;
+    margin-bottom: 3rem;
+}
+.description-header{
+    font-size: 25px;
+    text-align: start;
+    width: 100%;
+}
+p{
+    padding-top: 5px;
+    font-family: 'Jost', sans-serif;
+    word-spacing: 4px;
+    font-style: italic;
+    
 }
