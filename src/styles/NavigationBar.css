@@ -4,6 +4,8 @@
 .navbar {
     border-radius: 0;
     box-shadow: none;
+    position: fixed;
+    width: 100%;
   }
   
   /* Style the brand link */
