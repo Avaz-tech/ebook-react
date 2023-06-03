@@ -9,9 +9,11 @@ export class BookIntro extends Component {
         <NavigationBar />
         <div className="intro-container">
           <div className="img-container a">
-            <div>
-              <img src="" alt="" />
-            </div>
+            <img
+              className="cover-image"
+              src={require("../images/atomic-habits.webp")}
+              alt=""
+            />
           </div>
           <ul className="book-inf b">
             <li className="book-title">Atomic Habits</li>

@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch books from server
-    fetch('http://localhost:3001/books')
+    fetch('http://localhost:4002/books')
       .then(response => response.json())
       .then(data => {
         setBooks(data);

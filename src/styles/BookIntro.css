@@ -5,23 +5,23 @@
     margin-top: 7rem;
     justify-self: center;
     width: 90vw; /* set container width relative to viewport width */
-    max-width: 1200px; /* set maximum container width */
+    max-width: 1300px; /* set maximum container width */
+    grid-auto-columns: minmax(65px, 1fr);
     display: grid;
     gap: 10px;
     grid-template-areas:
-      "a a b b b b"
-      "a a b b b b"
-      "a a c c d d"
-      "e e e e e e"
-      "e e e e e e"
-      "e e e e e e"
-      "e e e e e e";
+      "a a b b b b b b"
+      "a a b b b b b b"
+      "a a c c c d d d"
+      "e e e e e e e e"
+      "e e e e e e e e"
+      "e e e e e e e e"
+      "e e e e e e e e";
   }
   
   .intro-container > div {
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: 22px;
     color: rgb(6, 11, 7);
     background-color: rgba(240, 248, 255, 0.821);
@@ -29,18 +29,20 @@
   
 .a{ 
     grid-area: a;
-    height: 400px;
-    background-image: url('./../images/atomic-habits.webp');
-   object-fit: cover;
-   
+    height: 500px;
+     max-width: 323px;
+  
 }
 
-.img-container div{
+.cover-image{
+ 
+    height: 500px;
     object-fit: cover;
 }
 
 .b{
-    height: 320px;
+    width: 100%;
+    height: 420px;
     grid-area: b;
     padding: 1.5rem;
     margin-bottom: unset;
