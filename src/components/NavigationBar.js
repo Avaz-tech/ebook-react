@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../styles/NavigationBar.css'
 
@@ -16,15 +17,15 @@ function NavigationBar() {
 
 
   return (
-    <Navbar  style={{ background: color }} expand="lg"  onClick={() => changeColor('pink') }>
+    <Navbar  style={{ background: color }} expand="lg" >
       <Navbar.Brand href="#">Hittbook</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">Books</Nav.Link>
-          <Nav.Link href="#">Magazines</Nav.Link>
-          <Nav.Link href="#">Journals</Nav.Link>
+          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link"  to="#">Books</Link>
+          <Link className="nav-link" to="#">Magazines</Link>
+          <Link className="nav-link" to="#">Journals</Link>
           
         </Nav>
       </Navbar.Collapse>
