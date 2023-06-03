@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home'
-import BookIntro from './components/BookIntro'
+import BookIntro from './components/BookIntro';
+
 
 function App() {
   return (

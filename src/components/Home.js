@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './NavigationBar';
 import './../styles/Home.css';
+import  ThemeSelector  from './ThemeSelector';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -42,6 +43,7 @@ const Home = () => {
   return (
     <>
       <NavigationBar />
+      <ThemeSelector />
       <div className="library-container">
         <Form className="mb-3">
           <Form.Group>
