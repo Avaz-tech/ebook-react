@@ -8,7 +8,8 @@ const themeReducer = (state, action ) => {
     case "CHANGE_COLOR":
       return { ...state, color: action.payload };
       break;
-  
+    case "CHANGE_MODE": 
+     return { ...state, mode: action.payload };  
     default:
       return state;
       break;
@@ -18,15 +19,21 @@ const themeReducer = (state, action ) => {
 export function TemaTaminlovchisi({ children }) {
 
  const [state, dispatch] =  useReducer(themeReducer, {
-    color: "white"
+    color: "white",
+    mode: 'light'
   })
 
 const changeColor = (color) => {
  dispatch({ type: "CHANGE_COLOR", payload: color })
 }
+ 
+const changeMode = (mode) => {
+  dispatch({ type: 'CHANGE_MODE', payload: mode})
+}
+
 
   return (
-    <ThemeContext.Provider value={{ ...state, changeColor }}> {children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={{ ...state, changeColor, changeMode  }}> {children}</ThemeContext.Provider>
   )
 
 }
