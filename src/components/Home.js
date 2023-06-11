@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Form, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavigationBar from "./NavigationBar";
 import "./../styles/Home.css";
@@ -10,10 +10,13 @@ import ThemeSelector from "./ThemeSelector";
 import { projectFirestore } from "../firebase/config";
 
 const Home = () => {
-  const navigate = useNavigate();
+
   const [books, setBooks] = useState([]);
   const [filteredBooks, setFilteredBooks] = useState([]);
   const [query, setQuery] = useState("");
+
+
+ 
 
   useEffect(() => {
 
@@ -30,8 +33,7 @@ const Home = () => {
         setFilteredBooks(bookData);
       });
 
-      console.log(books);
-
+    
     // Fetch books from server
     // fetch('http://localhost:4002/books')
     //   .then(response => response.json())
@@ -56,9 +58,6 @@ const Home = () => {
     setFilteredBooks(filtered);
   };
 
-  function handleMoreClick() {
-    navigate("/book-info");
-  }
   return (
     <>
       <NavigationBar />
@@ -88,9 +87,9 @@ const Home = () => {
                   {book.author}
                 </Card.Subtitle>
                 <Button variant="primary">Download</Button>
-                <button onClick={handleMoreClick} className="hidden-text">
+                <Link to={`/book-inf/${book.id}`} className="hidden-text">
                   More
-                </button>
+                </Link >
               </Card.Body>
             </Card>
           ))}

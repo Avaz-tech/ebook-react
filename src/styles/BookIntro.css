@@ -29,20 +29,20 @@
   
 .a{ 
     grid-area: a;
-    height: 500px;
-     max-width: 323px;
+    height: 480px;
+     width: 320px;
   
 }
 
 .cover-image{
- 
-    height: 500px;
+    height: 480px;
     object-fit: cover;
+    width: 320px;
 }
 
 .b{
     width: 100%;
-    height: 420px;
+    height: 400px;
     grid-area: b;
     padding: 1.5rem;
     margin-bottom: unset;

@@ -13,7 +13,7 @@ export default function ThemeSelector(params) {
     changeMode(mode === "light" ? "dark" : "light");
     document.body.style.backgroundColor = mode === 'light' ? '#041C32' : 'white'
   };
-  console.log(mode);
+  
 
   return (
     <div className="themeSelector">
