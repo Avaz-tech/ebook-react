@@ -1,19 +1,19 @@
-
-.themeSelector{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 1200px;
-    margin: 20px auto;
-    margin-top: 6rem;
+.themeSelector {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+  position: fixed;
+  z-index: 1;
 }
- 
-.themeButtons div{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin-left: 15px;
-    border-radius: 50%;
-    margin-top: 8px;
+
+.themeButtons div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 50%;
+  margin-top: 8px;
 }

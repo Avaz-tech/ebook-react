@@ -2,48 +2,48 @@
 
 /* Style the navigation bar */
 .navbar {
-    border-radius: 0;
-    box-shadow: none;
-    position: fixed;
-    width: 100%;
-  }
-  
-  /* Style the brand link */
-  .navbar-brand {
-    font-weight: bold;
-    margin-left: 2rem;
-    font-size: 2rem;
-  }
-  
-  /* Style the navigation links */
-  .nav-link {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  /* Style the active link */
-  .nav-link.active {
-    color: #007bff;
-  }
-  
-  /* Style the collapsed menu button */
-  .navbar-toggler {
-    border: none;
-  }
-  
-  /* Style the collapsed menu icon */
-  .navbar-toggler-icon {
-    background-color: #33333300;
-  }
-  .navbar-nav{
-    margin-left: 2rem;
-  }
-  .navbar-toggler.collapsed{
-    margin-right: 1rem;
-    padding: 4px;
-  }
-  .navbar-toggler:focus {
-    padding: 4px;
-    margin-right:1rem ;
-  }
-  
+  border-radius: 0;
+  box-shadow: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the brand link */
+.navbar-brand {
+  font-weight: bold;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+
+/* Style the navigation links */
+.nav-link {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style the active link */
+.nav-link.active {
+  color: #007bff;
+}
+
+/* Style the collapsed menu button */
+.navbar-toggler {
+  border: none;
+}
+
+/* Style the collapsed menu icon */
+.navbar-toggler-icon {
+  background-color: #33333300;
+}
+.navbar-nav {
+  margin-left: 2rem;
+}
+.navbar-toggler.collapsed {
+  margin-right: 1rem;
+  padding: 4px;
+}
+.navbar-toggler:focus {
+  padding: 4px;
+  margin-right: 1rem;
+}

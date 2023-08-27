@@ -1,14 +1,14 @@
-body{
- /*   background-image: url('./../images/book-img3.jpeg');*/
+body {
+  /*   background-image: url('./../images/book-img3.jpeg');*/
   background-size: cover;
   background-position: center;
 }
-#root{
+#root {
   display: grid;
 }
 
-.navbar-brand{
-  padding-top:0;
+.navbar-brand {
+  padding-top: 0;
 }
 
 .library-container {
@@ -17,82 +17,84 @@ body{
   /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
-  }
+}
 
-  .books-container {
-    justify-self: center;
-    margin: 3rem;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(10rem, 1fr));
-    gap: 20px 10px;
-  }
-  
-  .mb-3{
-   display: flex;
-   margin-left:1rem;
-   flex-direction: column;
-  }
+.books-container {
+  justify-self: center;
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  gap: 20px 10px;
+}
 
-  input.form-control{
-    width: 30rem;
-  }
-  input.form-control:focus{
-    box-shadow:none;
-    border-color: blueviolet;
-    background-color: transparent;
-  }
-  .search-input {
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgb(160, 135, 135);
-    background-color: transparent;
-  }
-  
-  .card-img-top {
-    max-width: 239px;
-    max-height: 318px;
-    object-fit: cover;
-  }
-  .card{
-    max-width: 241px;
-    max-height: 438px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
-  div.card-title.h5{
-    font-size: 18px;
-  }
-  p.card-text{
-    font-size: 14px;
-  }
-  button.btn.btn-primary{
-    color:rgba(0, 0, 0, 0.357);
-    font-size: 14px;
-    background-color: #f8f9fa2c;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.13) 0px 2px 3px;
-  }
+.mb-3 {
+  display: flex;
+  margin-left: 1rem;
+  flex-direction: column;
+}
 
- 
-  .hidden-text {
-    height: 20rem;
-    position: absolute;
-    top: 0;
-   
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.446);
-    color: #fff;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.5s;
+input.form-control {
+  width: 30rem;
+}
+input.form-control:focus {
+  box-shadow: none;
+  border-color: blueviolet;
+  background-color: transparent;
+}
+.search-input {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgb(160, 135, 135);
+  background-color: transparent;
+}
 
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-  }
-  
- .hidden-text:hover {
-    opacity: 1;
-  }
-  
+.card-img-top {
+  max-width: 239px;
+  max-height: 318px;
+  object-fit: cover;
+}
+.card {
+  max-width: 241px;
+  max-height: 438px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+div.card-title.h5 {
+  font-size: 18px;
+}
+p.card-text {
+  font-size: 14px;
+}
+button.btn.btn-primary {
+  color: rgba(0, 0, 0, 0.357);
+  font-size: 14px;
+  background-color: #f8f9fa2c;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.13) 0px 2px 3px;
+}
+
+.hidden-text {
+  height: 20rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.446);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  transition: opacity 0.5s;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+}
+
+.hidden-text:hover {
+  opacity: 1;
+  color: white;
+  font-size: 24px;
+}
