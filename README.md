@@ -1,1 +1,2 @@
-!(ebook_home_image)[src/images/ebook_landing_img.png]
+![home page](src/images/ebook_landing_img.png)
+
